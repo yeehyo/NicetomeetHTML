@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form> <!-- 입력 양식 작성하려고 문여는 태그 -->
+    <!--<input> 실질적으로 입력 필드를 만들어주는 녀석
+    type="nn" : 입력 양식의 종류를 호출하는 속성
+    name="nn" : 서버로 전송할 때 (js랑 연결할 때)사용되는 이름 속성
+    id="nn" : name 속성과 같은 기능을 공유하되, 스타일 값도 연결가능
+                + 해당 문서에서 딱 한 이름만 가져야함
+    value="홍길동" : 초기값
+    -->
+
+        <!-- 사용자가 입력하는 양식 -->
+        <input type="text" value="text" name="성별" id="남">
+        <lable for="남">남자분은 여기에 입력해주세요.</lable><br>
+        <input type="text" value="text" name="성별" id="여">
+        <lable for="여">여자분은 여기에 입력해주세요.</lable><br>
+        <input type="file" name="file" id="file"><br>
+        <input type="checkbox" name="checkbox" id="checkbox"><br> <!--중복체크가능-->
+        <input type="radio" name="radio" id="radio"><br> <!--단수체크가능-->
+
+        <!-- 보이지 않는 입력 양식 -->
+        <input type="password" name="password" id="password"><br>
+        <input type="hidden" name="hidden" value="hidden"><br> <!--사용자가 못보게끔 숨김하는 기능-->
+
+        <!-- 버튼 -->
+        <input type="button" value="button"><br> <!--옛 버튼의 조상 <button> 태그로 치환해서 사용 가능-->
+        <input type="submit" value="submit"><br> <!--옛 버튼의 조상 <button> 태그로 치환해서 사용 가능-->
+        <input type="reset" value="reset"><br> <!--옛 버튼의 조상 <button> 태그로 치환해서 사용 가능-->
+            <button>button</button><br>
+        <input type="image" src="https://i.pinimg.com/1200x/87/f7/70/87f7709e10340a0119b8cffc043e0cea.jpg" width="100" height="100" alt=""><br>
+
+        <!---->
+        <input type="email" placeholder="이메일을 입력해주세요"><br>
+        <input type="url" placeholder="웹주소를 입력해주세요"><br>
+        <!--목적에 맞게 섰는지 w3c 유효성 검사할 때 드러남-->
+        <input type="number" min="0" max="100"><br>
+        <input type="range" min="0" max="100"><br>
+        <input type="date"><br>
+        <input type="time"><br>
+        <input type="color"><br>
+        <input type="tel" placeholder="전화번호를 입력해주세요"><br>
+        <input type="search" placeholder="검색어를 입력해주세요"><br>
+        <input type="month"><br>
+        <input type="week"><br>
+    </form>
+
+    <!--<style>
+    #uName{
+        color: blue;
+    }
+    </style>-->
+
+    <!--<script>
+        iet byun = document.getElementsBy("username")[0].value;alert; -->
+
+    <select multiple="multiple"> <!--패밀리 사이트같은 기능 쓸려고 문여는 태그-->
+        <optgroup label="맛있는거">
+        <option>사과</option>
+        <option>배</option>
+        <option>감</option>
+        </optgroup>
+        <optgroup label="더 맛있는거">
+        <option>자두</option>
+        <option>복숭아</option>
+        </optgroup>
+    </select><br>
+
+    <fieldset>
+        <legend>폼 태그는 여기서 마칩니다 :)</legend>
+        <p>그동안 썼던 태그 중 가장 기억에 남는 태그 다섯개만 써보세요</p>
+        <form>
+            <input type="text"><br>
+            <input type="text"><br>
+            <input type="text"><br>
+            <input type="text"><br>
+            <input type="text"><br>
+        </form>
+    </fieldset>
+    <br>
+    <label for="겨울간식">간식거리 써보기</label><br>
+    <textarea id="겨울간식" placeholder="겨울 하면 떠오리는 대표 간식거리를 모두 써보세요" rows="4" cols="40" style="resize: none;"></textarea><br><br>
+
+    <details>
+        <summary><mark><b><u><i>징글벨 징글벨</i></u></b></mark></summary>
+        겨울 하면 떠오르는 노래를 머릿속으로 불러보세요
+    </details>
+
+</body>
+</html>
