@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h4>07문제풀이</h4>
+    <table>
+        <tr>
+            <th>아이디</th>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <th>비밀번호</th>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td><input type="button" value="제출"></td>
+        </tr>
+    </table>
+    </div>
+<br><hr>
+    <div>
+        <h4>08문제풀이</h4>
+        <label for="Search">Search</label><br>
+        <input type="search" placeholder="Enter keyword" id="Search">
+        <input type="button" value="Search">
+    </div>
+<br><hr>
+    <div>
+        <h4>09문제풀이</h4>
+        <fieldset>
+          <legend>Your Details&ratio;</legend>
+
+          <!--선생님 풀이 (label 태그 사용)-->
+          <label for="name">Name&ratio;</label>
+          <input type="text" name="" id="name"><br>
+          <label for="email">Email&ratio;</label>
+          <input type="email" name="" id="email">
+        <br><br>
+            <!--스스로 풀이 (table 태그 사용)-->
+          <table>
+          <tr>
+            <td>Name:</td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td>Email:</td>
+            <td><input type="text"></td>
+          </tr>  
+          </table>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Your Review&ratio;</legend>
+            <label for="google">How did you hear about us?</label>
+            <select id="google">
+                <option>Google</option>
+                <option>Naver</option>
+                <option>Daum</option>
+            </select>
+            <br>
+            <p>Would you visit again?</p>
+            <input type="radio"><span>Yes</span>
+            <input type="radio"><span>No</span>
+            <input type="radio"><span>Maybe</span>
+            <br>
+            <br>
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" rows="4" cols="40" placeholder="즐겁읍니다..^_^"></textarea>
+            <br>
+            <br>
+            <input type="checkbox"> <span>Sign me up for email updates</span>
+            <br>
+            <input type="button" value="Submit review">
+        </fieldset>
+    </div>
+</body>
+</html>

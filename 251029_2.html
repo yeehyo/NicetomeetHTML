@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>간단한 꾸미기</title>
+    <style>
+        h4{
+            color:darkslategrey; /*고유색상표기방식*/
+        }
+        p{
+            /*color: #140a05; HEX(16진수)-표기방식*/
+            /*color: #140a0548; HEX(16진수)-표기방식 + 00두자리 알파(투명도) = rgba를 16진수로 표기하는 방식 */
+            /*color: rgb(51, 10, 162); RGB 표기 방식*/
+            /*color: rgba(51, 10, 162, 0.5);RGBA 표기 방식*/
+            color:	hsl(20, 60%, 5%);
+            /*
+            hue : 색조 0~360 색상 각도
+            saturation : 채도 0~100%
+            lightness : 밝기 0~100%
+            */
+            /*lab 랩컬러 - 사람이 보는 방식과 유사하게 구현하려고 */
+        }
+        section{
+            background-color:beige;
+        }
+    </style>
+</head>
+<body>
+    <!--공간박스용 태그를 하나 임의로 선택해서 그 안에 오늘 떠오르는 노래 제목 1개,
+    그에 대한 가사 한 덩어리, 해당 곡이 들어있는 앨범 자켓 사진 1개 -> 웹 상에 HTML로 구현하기-->
+    <section>
+        <img src="https://i.namu.wiki/i/p3xqd9Cnqqdl7Wx1ncbASObdfWAibBaDMKwZSVw8IjYuooeP6plNGqQgy4NBm4QH9U-fRrc43uZiKP-b6dqZQhgBLwz6OC8oqdxZq6-bYhZzSLpgrvdjWS3N1-3WF2SRKxp6WbfWob82-EaVnucoJw.webp" alt="ERROR앨범자켓" width="300">
+    <article style="width: 100vw; height: 480px; margin: 0; padding: 0;">
+        <iframe
+        width="100%"
+        height="100%"
+        src="https://www.youtube.com/embed/Y7C8qIpo7Dg?si=byNsnwVTbSdBOt84" title="YouTube video player"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+        </iframe>
+  </article>
+  <h4>이찬혁(LEE CHANHYUK) - 파노라마(Panorama)</h4>
+        <details>
+            <summary><u><mark>가사보기</mark></u></summary>
+                <p><i>머리가 깨질 것 같이<br>
+                잠에서 일어나<br>
+                악몽을 꾼 것 같은데<br><br>
+                나를 둘러싼 사람들<br>
+                고장 나버린 내 몸을 두고<br>
+                저 돌팔이 의사가 사망 선고를 하네<br><br>
+                이렇게 죽을 순 없어<br>
+                버킷리스트 다 해봐야 해<br>
+                짧은 인생 쥐뿔도 없는 게<br>
+                스쳐 가네 파노라마처럼</i></p>
+        </details>
+    </section>
+</body>
+</html>
